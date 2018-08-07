@@ -1,0 +1,156 @@
+body {
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 0;
+     margin: 0;
+     font-size: 14px;
+     background-color: #fff;
+}
+ body div {
+     box-sizing: border-box;
+}
+ body .main-wrapper {
+     width: 860px;
+     margin: 0 auto;
+}
+ body .main-wrapper .logo {
+     float: left;
+     margin-right: 50px;
+     margin-top: 20px;
+}
+ body .main-wrapper .logo img {
+     width: 300px;
+}
+ body .main-wrapper nav {
+     float: left;
+     margin-top: 120px;
+     height: 40px;
+     width: 510px;
+     border-top: 1px solid #617d8a;
+     border-bottom: 1px solid #617d8a;
+     padding-top: 25px;
+}
+ body .main-wrapper nav a {
+     float: left;
+     display: block;
+     margin-left: 85px;
+     color: #76cdd7;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 18px;
+}
+ body .main-wrapper .toolbar {
+     text-align: right;
+     padding-top: 230px;
+}
+ body .main-wrapper .toolbar input[type=text] {
+     width: 150px;
+     height: 15px;
+     border: 2px solid #76cdd7;
+     padding: 15px 30px;
+     color: #76cdd7;
+     background-color: #fff;
+}
+ body .main-wrapper .toolbar ::placeholder {
+     color: #76cdd7;
+     font-weight: bold;
+}
+ body .main-wrapper .post-list img {
+     max-width: 100%;
+     width: auto;
+     height: auto;
+}
+ body .main-wrapper .post-list article {
+     width: 400px;
+     height: 680px;
+     background-color: #e8e5e5;
+     border: 10px solid #e8e5e5;
+     float: left;
+     margin-right: 10px;
+     margin-top: 15px;
+}
+ body .main-wrapper .post-list article h3 {
+     text-transform: uppercase;
+     color: #76cdd7;
+     border-top: 1px solid #686868;
+     padding-top: 10px;
+}
+ body .main-wrapper .post-list article p {
+     color: #686868;
+}
+ body .main-wrapper .post-list article .post-description {
+     color: #76cdd7;
+     padding-top: 10px;
+     padding-left: 15px;
+}
+ body .main-wrapper .post-list article:nth-child(odd) {
+     margin-right: 20px;
+}
+ body .main-wrapper .post-list article:nth-child(even) {
+     margin-right: 0px;
+}
+ body .main-wrapper .post-list article:nth-child(3) {
+     height: 500px;
+}
+ body .main-wrapper .post-list article:nth-child(4) {
+     height: 500px;
+}
+ body .main-wrapper .post-list article:nth-child(5) {
+     height: 450px;
+}
+ body .main-wrapper .post-list article:nth-child(6) {
+     height: 450px;
+}
+ body .main-wrapper .about h1 {
+     text-transform: uppercase;
+     color: #76cdd7;
+     float: right;
+}
+ body .main-wrapper .about p {
+     float: left;
+     color: #686868;
+}
+ body .main-wrapper .about p:nth-child(3) {
+     padding-right: 50%;
+}
+ body .main-wrapper .about div img {
+     width: 100%;
+}
+ body .main-wrapper .contact-form {
+     float: right;
+}
+ body .main-wrapper .contact-form h1 {
+     text-transform: uppercase;
+     color: #76cdd7;
+     text-align: right;
+}
+ body .main-wrapper .contact-form h4 {
+     text-transform: uppercase;
+     color: #76cdd7;
+     text-align: right;
+}
+ body .main-wrapper .contact-form input[type=text], body .main-wrapper .contact-form select, body .main-wrapper .contact-form textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+     background-color: #fff;
+}
+ body .main-wrapper .contact-form input[type=submit] {
+     background-color: #76cdd7;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     cursor: pointer;
+     float: right;
+     width: 200px;
+     height: 40px;
+     text-transform: uppercase;
+}
+ body .main-wrapper footer span {
+     float: left;
+     color: #ccc;
+}
+ 
