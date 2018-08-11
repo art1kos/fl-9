@@ -1,0 +1,355 @@
+body {
+     font-family:'Open Sans', sans-serif;
+     padding: 0;
+     margin: 0;
+     background-color: #ffffff;
+}
+ h1, h2, h3, h4, p, a{
+     font-weight: normal;
+}
+ .clearfix:after {
+     content: '';
+     display: table;
+     width: 100%;
+     clear: both;
+}
+ div {
+     box-sizing: border-box;
+}
+ header {
+     background: url(../img/apples.jpg) no-repeat center top / cover;
+     height:600px;
+     color: #fff;
+}
+ .container {
+     overflow: hidden;
+     min-width: 900px;
+     margin: 0 auto;
+     margin-right: 50px;
+     margin-left: 50px;
+}
+ .logo{
+     margin-top: 45px;
+     float: left;
+     text-transform: uppercase;
+     font-size: 16px;
+}
+ .nav{
+     margin-top: 45px;
+     float: right;
+     margin-right: 50px;
+}
+ .nav:last-child{
+     margin-right: 0;
+}
+ .menu{
+     padding: 0;
+     margin: 0;
+     display: block;
+}
+ .menu li{
+     float: left;
+     display: block;
+     margin-right: 45px;
+}
+ .menu li:last-child{
+     margin-right: 0;
+}
+ .menu a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 16px;
+     padding: 15px 5px;
+}
+ .titles__first{
+     font-size: 40px;
+     color: #fff;
+     text-align: center;
+     text-transform: uppercase;
+     margin-top: 180px;
+}
+ .big{
+     font-size: 2em;
+}
+ .text{
+     font-size: 40px;
+     color: #fff;
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 10px;
+     margin:0;
+}
+ .text::after {
+     content: "TM";
+     vertical-align: super;
+     font-size: 20px;
+     letter-spacing: normal;
+}
+ .original{
+     font-size: 14px;
+     color: #fff;
+     text-align: center;
+     letter-spacing: normal;
+}
+ .button{
+     background: rgba(0,0,0,0.5);
+     border:2px solid #fff;
+     color: #fff;
+     display: block;
+     width: 230px;
+     padding: 20px 10px;
+     margin: 0 auto;
+     text-decoration: none;
+     text-align: center;
+     font-weight: normal;
+     font-size: 18px;
+     margin-top: 120px;
+     margin-bottom: 60px;
+}
+ .text-container{
+     display: flex;
+     flex-direction: row;
+     margin-top: 80px;
+     margin-bottom:50px;
+     height: 150px;
+}
+ .lorem{
+     width:400px;
+}
+ .paragraph{
+     margin-left: 500px;
+     padding-top: 10px;
+     width: 400px;
+     font-size: 11px;
+}
+ #article{
+     background: #f3f3f3;
+     height: 1550px;
+}
+ .title h3{
+     padding-top: 100px;
+     text-align: center;
+}
+ .news{
+     margin-top: 50px;
+}
+ img{
+     padding: 5px;
+     padding-left: 0;
+     padding-right: 10px;
+     height: 250px;
+     width: 750px;
+}
+ .text-left,.text-right p{
+     text-align: center;
+     line-height: 1.5;
+     padding-top:70px;
+}
+ .text-left{
+     padding-right: 20px;
+}
+ .text-right{
+     padding-left: 20px;
+}
+ .img-text-top{
+     display:inline-block;
+     position:relative;
+     display: flex;
+     flex-direction: row;
+}
+ .img-text-top a{
+     display:inline-block;
+     position:absolute;
+     top:20px;
+     left:660px;
+     text-decoration: none;
+     color:#FFF;
+     font-size:16px;
+     background-color:#636061;
+     border: 2px solid #fff;
+     padding: 7px 10px;
+}
+ .text-location{
+     display:inline-block;
+     position:absolute;
+     top:215px;
+     left:35px;
+     color:#FFF;
+     font-size:16px;
+}
+ .img-text-sm-top{
+     display:inline-block;
+     position:relative;
+     display: flex;
+     flex-direction: row;
+}
+ .img-text-sm-top a{
+     display:inline-block;
+     position:absolute;
+     top:20px;
+     left:1130px;
+     text-decoration: none;
+     color:#FFF;
+     font-size:16px;
+     background-color:#636061;
+     border: 2px solid #fff;
+     padding: 7px 10px;
+}
+ .img-text-sm-bot{
+     display:inline-block;
+     position:relative;
+     display: flex;
+     flex-direction: row;
+}
+ .img-text-sm-bot a{
+     display:inline-block;
+     position:absolute;
+     top:20px;
+     left:660px;
+     text-decoration: none;
+     color:#FFF;
+     font-size:16px;
+     background-color:#636061;
+     border: 2px solid #fff;
+     padding: 7px 10px;
+}
+ .img-text-bot{
+     display:inline-block;
+     position:relative;
+     display: flex;
+     flex-direction: row;
+}
+ .img-button-right{
+     display:inline-block;
+     position:absolute;
+     top:20px;
+     left:1130px;
+     text-decoration: none;
+     color:#FFF;
+     font-size:16px;
+     background-color:#636061;
+     border: 2px solid #fff;
+     padding: 7px 10px;
+}
+ .text-location{
+     display:inline-block;
+     position:absolute;
+     top:200px;
+     left:500px;
+     color:#FFF;
+     font-size:16px;
+}
+ .text-location-left{
+     display:inline-block;
+     position:absolute;
+     top:200px;
+     left:35px;
+     color:#FFF;
+     font-size:16px;
+}
+ .subscribe{
+     margin-top: 40px;
+     height: 220px;
+     background-color: #fff;
+     padding-top: 75px;
+     padding-left: 10px;
+     display: flex;
+}
+ .subscribe h2{
+     float: left;
+     display: block;
+     margin-top: 30px;
+}
+ .input-but {
+     width: 75%;
+     height: 30px;
+     float: right;
+     margin:0;
+     margin-top: 12px;
+}
+ .input-but input{
+     border: 1px solid #343638;
+     padding: 2.6% 3%;
+     width: 67%;
+     margin-left: 1.4%;
+}
+ .input-but button{
+     padding: 2.7%;
+     color: #fff;
+     background-color: #343638;
+     border: 0;
+     margin: 0 0 0 -0.5%;
+     width: 25%;
+}
+ .item{
+     width: 300px;
+     float:left;
+     text-align: left;
+     margin-left: 10px;
+     margin-top: 50px;
+     margin-bottom: 60px;
+}
+ .item:first-child{
+     margin-left: 0px;
+}
+ .item .input-but {
+     width: 250px;
+     height: 30px;
+     float: left;
+     margin-top: 0px;
+}
+ .item .input-but input{
+     border-top: 1px solid #343638;
+     font-style: italic;
+     padding: 4% 4%;
+     display: inline-block;
+     width: 150px;
+     margin-left: 1.4%;
+}
+ .item .input-but button{
+     padding: 4.4%;
+     color: #fff;
+     background-color: #343638;
+     border:0;
+     margin: 0 0 0 -2%;
+     width: 75px;
+}
+ .item p{
+     color: #b6b6b6;
+     margin-bottom: 4px;
+     margin-top:4px;
+}
+ .item .light{
+     color: #dbdbdb;
+}
+ .footer{
+     color: #b6b6b6;
+     float: left;
+     display: block;
+     margin-top: 10px;
+}
+ .nav-footer{
+     float: right;
+     margin-top: 10px;
+}
+ .nav-footer nav:last-child{
+     margin-right: 0;
+}
+ .-nav-footer.menu{
+     padding: 0;
+     margin: 0;
+     display: block;
+}
+ .nav-footer .menu li{
+     float: left;
+     display: block;
+     margin-right: 45px;
+}
+ .nav-footer .menu li:last-child{
+     margin-right: 0;
+}
+ .nav-footer .menu a{
+     color: #000;
+     text-decoration: none;
+     font-size: 16px;
+}
