@@ -1,0 +1,180 @@
+/* * Feel free to change name of colors if you need it * Feel free to add new colors if you need it */
+ :root {
+     --bg-color--dark: #0a1223;
+     --bg-color--light: #fff;
+     --link: #5d5d5d;
+     --link--active: #54597d;
+     --link--hover: #54597d;
+     --article-title: #ddd;
+     --article-title--dark: #000;
+     --thumbnail--description: #5d5d5d;
+    /* These styles are needed only for media query max-width: 575px */
+    /* The 'Up' button (circle button at right bottom corner) */
+     --btn-color: #fff;
+     --btn-bg-color: #5ebcff;
+     --navigation-border-bottom: #ddd;
+     --thumbnail-title: #484747;
+}
+/* Your styles go here */
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 0;
+     margin: 0;
+     font-size: 14px;
+     background-color:#0a1223;
+}
+ .clearfix:after {
+     content: '';
+     display: table;
+     width: 100%;
+     clear: both;
+}
+ div {
+     box-sizing: border-box;
+}
+ .header-container {
+     min-width: 991px;
+     margin: 0 auto;
+}
+ .nav{
+     top: 20px;
+     right: 40px;
+     float: right;
+     position: absolute;
+}
+ .menu{
+     padding: 0;
+     margin: 0;
+     display: block;
+}
+ .menu li{
+     float: left;
+     display: block;
+     margin-right: 21px;
+}
+ .menu a{
+     float: right;
+     color: #5d5d5d;
+     text-decoration: none;
+}
+ .menu a:hover{
+     color: #54597d;
+}
+ section {
+     width: 80%;
+     margin: 0 auto;
+}
+ .banner-text h2{
+     color: #fff;
+     font-weight: bold;
+     font-size: 70px;
+     text-align: center;
+}
+ .banner{
+     margin-top:150px;
+     width:90%;
+}
+ article {
+     display: flex;
+}
+ article:nth-child(even) {
+     flex-direction: row-reverse;
+}
+ .article {
+     display: block;
+     float:left;
+     margin: 2%;
+}
+ .text, .img-big {
+     width: 48%;
+}
+ .img-big {
+     display: flex;
+}
+ img {
+     width: 100%;
+     height: 100%;
+}
+ a{
+     text-decoration:none;
+}
+ .text h2{
+     font-size: 30px;
+     background: linear-gradient(100deg, #fff 10%, #ddd 10%, #5d5d5d 80%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+ .text p{
+     color:#5d5d5d;
+}
+ .top{
+     display: none;
+}
+ @media screen and (max-width:991px) {
+     .nav{
+         margin:0;
+         padding:0;
+         left: 0;
+         right: 0;
+         float:center;
+    }
+     article {
+         display: inline-block;
+    }
+     .article {
+         width: 100%;
+    }
+}
+ .top{
+     display:none;
+}
+ @media screen and (max-width: 575px) {
+     .heading nav{
+         width: 100%;
+    }
+     .heading li{
+         display:flex;
+         flex-direction: column;
+         width: 98.1%;
+         text-align: left;
+         background-color: #fff;
+         border-bottom: 1px solid #cccccc;
+         padding: 5px 
+    }
+     .nav{
+         top:0px;
+    }
+     body{
+         background-color:#fff;
+    }
+     .banner-text h2{
+         color: #0a1223;
+         padding-top: 50px 
+    }
+     .text p{
+         color:#5d5d5d;
+    }
+     .text h2{
+         color: #484747;
+         background: linear-gradient(to right, #484747, #484747);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+     .top{
+         background-color:#5ebcff;
+         border: none;
+         color: #ddd;
+         padding: 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 50%;
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+    }
+}
+ 
