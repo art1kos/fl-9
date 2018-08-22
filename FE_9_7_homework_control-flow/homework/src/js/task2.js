@@ -1,55 +1,61 @@
-var play = confirm("Do you want to play game?","");
+let play = confirm('Do you want to play game?','');
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
-var totalPrize = 0;
-var game = true;
-var success = true;
-var range = 5;
-var prizeOne = 10 ;
-var prizeTwo = 5;
-var prizeThree = 2;
-
+let totalPrize = 0;
+let game = true;
+let range = 5;
+let prizeOne = 10 ;
+let prizeTwo = 5;
+let prizeThree = 2;
+let range_x = 2;
+let three = 3
+let one = 1;
 if(!play){
-	alert("You did not become a millionaire");
+	alert('You did not become a millionaire');
 }else{
 	while(game){
-		var number = getRandomInt(0,range);
+		let number = getRandomInt(0,range);
 		console.log(number);
-		for(var i = 3; i>0; i--){
-			var userNumber = prompt("Enter a number [0;"+range+"] " + "\n" + "Atempts: " + i + "\n" + "Total prize is: " + totalPrize, "0");
+		for(let i = 3; i>0; i--){
+			let userNumber = prompt('Enter a number [0;'+range+'] ' + '\n' + 'Atempts: ' + i + 
+				'\n' + 'Total prize is: ' + totalPrize, '0');
 			if(isNaN(userNumber)){
-				alert("Bad input, please enter correct number")
+				alert('Bad input, please enter correct number')
 				break;
 			}
-			if (userNumber == number){
+			if (userNumber === number){
 				switch(i){
-					case 3: totalPrize+=prizeOne;
+					case one: totalPrize+=prizeOne;
 					break;
 					case 2:totalPrize+=prizeTwo;
 					break;
-					case 1:totalPrize+=prizeThree;
+					case 3:totalPrize+=prizeThree;
+					break;
+					default: 
 					break;
 			}
-			game = confirm("Do you want to continue a game?","");		
-			if(game == false){
-				alert("Your prize is " + totalPrize);
+			game = confirm('Do you want to continue a game?','');		
+			if(game === false){
+				alert('Your prize is ' + totalPrize);
 				totalPrize = 0 ;
-				game = confirm("Do you want to try again?");
-				range = 5;
+				game = confirm('Do you want to try again?');
+				let range = 5;
+				console.log(range);
 				break;
 			}
-				range *= 2; 
-				prizeOne *= 3;
-				prizeTwo *= 3;
-				prizeThree =(3*prizeThree) + 1;
+				range *= range_x; 
+				prizeOne *= three;
+				prizeTwo *= three;
+				prizeThree = three * prizeThree + one;
 				break;
 			}else{
-				if(i == 1){
-					alert("Your prize is " + totalPrize);
+				if(i === one){
+					alert('Your prize is ' + totalPrize);
 					totalPrize = 0 ;
-					game = confirm("Do you want to try again?");
-					range = 5;
+					game = confirm('Do you want to try again?');
+					let range = 5;
+					console.log(range);
 					break;
 				}
 			}
